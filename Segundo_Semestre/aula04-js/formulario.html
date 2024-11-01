@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Nome:</label>
+            <input type="text" name="nome"/>
+        </p>
+        <p>
+            <label>Usuário:</label>
+            <input type="text" name="login"/>
+        </p>
+        <p>
+            <label>Senha:</label>
+            <input type="password" name="senha"/>
+        </p>
+        <hr>
+        <p>
+            <label>Cidade:</label>
+            <input type="text" name="cidade" placeholder="Sua cidade"/>
+        </p>
+        <p>
+            <label>Endereço:</label>
+            <input type="text" name="endereco" size="35" placeholder="Seu endereço residencial"/>
+            <input type="text" name="numero" size="15" placeholder="Numero da residencia"/>
+        </p> 
+        <p>
+            <label>Qtd filhos:</label>
+            <input type="text" name="filhos" maxlength="2"/>
+        </p>
+
+        <hr>
+
+    <p>
+        Qual seu esporte favorito?<br>
+        <!-- checkbox caixa de selesão, mais de uma caixa selecionada ao mesmo tempo -->
+        <input type="checkbox" name="esporte" value="Basquete">Basquete <br>
+        <input type="checkbox" name="esporte" value="Volei" checked >Volei <br>
+        <input type="checkbox" name="esporte" value="Futebol">Futebol <br>
+        <input type="checkbox" name="esporte" value="Ping-Pong">Ping-Pong <br>
+        <input type="checkbox" name="esporte" value="Tenes">Tenes <br>
+    </p>
+    <p>
+        Qual seu time? <br>
+        <!-- radio apenas uma caixa de seleção -->
+        <input type="radio" name="time" value="SPFC" checked>São Paulo <br>
+        <input type="radio" name="time" value="Palmeiras">Palmeiras <br>
+        <input type="radio" name="time" value="Vasco">Vasco <br>
+        <input type="radio" name="time" value="Bahia">Bahia <br>
+        <input type="radio" name="time" value="Santos">Santos <br>
+    </p>
+    <p>
+        Escolha um sabor de sorvete:
+        <select>  <!--uma caixa de seleção -->
+            <option>Abacaxi</option>
+            <option>Morango</option>
+            <option>Limão</option>
+            <option>Óreo</option>
+            <option selected>Açai</option>
+            <option>Maracuja</option>
+        </select>
+    </p>        
+    <p>
+        <textarea cols="40" rows="5" name="comentario"></textarea>
+    </p>
+    <p>
+        <input type="reset">  <!--reseta o formulario da pagina onde esta no formulário -->
+        <input type="submit" value="Concluir">
+    </p>
+    
+    </form>
+</body>
+</html>

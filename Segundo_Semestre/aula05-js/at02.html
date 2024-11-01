@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 01</title>
+    <script type="text/javascript">
+        var valor1 = 0 , valor2 = 0;
+
+    function obterValores(){
+        valor1 = document.getElementById('valor1').value;
+        valor2 = document.getElementById('valor2').value;
+    }
+    function Multiplicar(){
+        obterValores();
+        document.getElementById('resultado').value = valor1 * valor2;
+    }
+    function Dividir(){
+        obterValores();
+        document.getElementById('resultado').value = valor1 / valor2;
+    }
+    function Somar(){
+        obterValores();
+        document.getElementById('resultado').value = parseInt(valor1) + parseInt(valor2);
+    }
+    function Subtrair(){
+        obterValores();
+        document.getElementById('resultado').value = valor1 - valor2;
+    }
+
+    </script>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Valor 1</label>
+            <input type="text" id="valor1">
+        </p>
+        <p>
+            <label>Valor 2</label>
+            <input type="text" id="valor2">
+        </p>
+        <p>
+            <label>Resultado</label>
+            <input type="text" id="resultado">
+        </p>
+        <p>
+            <input type="button" value="Multiplicar" onclick="Multiplicar()"/>
+            <input type="button" value="Dividir" onclick="Dividir()">
+            <input type="button" value="Somar" onclick="Somar()">
+            <input type="button" value="Subtrair" onclick="Subtrair()">
+
+        </p>
+    </form>
+</body>
+</html>

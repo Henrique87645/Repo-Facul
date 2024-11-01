@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- NÃO DEU CERTO -->
+    <meta charset="utf-8">
+    <title>Exercício 05</title>
+    <script>
+    valor1 = 0;
+    function Resultado(){
+        valor1 = document.getElementById('valor1').value;
+        for(let i = 0; i <= valor1; i++){
+            document.write(i + " ")
+        }
+    }
+    </script>
+</head>
+<body> 
+    <p>
+        <label>Coloque algum número:</label>
+        <input type="text" id="valor1">
+    </p>
+    <p>
+        <input type="button" value="número" id="resultado" onclick="Resultado()">
+    </p>
+</body>
+</html>
